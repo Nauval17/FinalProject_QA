@@ -18,7 +18,7 @@ public class PaymentDef {
     public void userInputRegisteredPassword() {
     }
 
-    @And("User click sign in button")
+    @And("User click login button")
     public void userClickSignInButton() {
     }
 

@@ -4,7 +4,7 @@ Feature: Payment
     Given User is on app login page
     When User input registered email
     And User input registered password
-    And User click sign in button
+    And User click login button
     Then User is on Payment Home
 
     Scenario:
