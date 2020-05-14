@@ -10,6 +10,7 @@ Feature: Payment
     Scenario:
       Given User is on Payment Home
       When User choose telkom payment
+      And User is on input phone number page
       And User input telkom phone number
       And User click cek tagihan button
       And User see payment detail
