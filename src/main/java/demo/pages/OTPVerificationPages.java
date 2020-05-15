@@ -3,7 +3,6 @@ package demo.pages;
 import demo.driver.AndroidDriverInstance;
 import demo.locators.PaymentVerificationLocator;
 import io.appium.java_client.android.AndroidElement;
-import io.restassured.RestAssured;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
