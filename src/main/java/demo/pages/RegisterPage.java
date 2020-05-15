@@ -3,7 +3,6 @@ package demo.pages;
 import demo.driver.AndroidDriverInstance;
 import demo.locators.RegisterLocator;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 

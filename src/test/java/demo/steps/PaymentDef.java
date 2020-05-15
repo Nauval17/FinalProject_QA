@@ -13,6 +13,7 @@ public class PaymentDef {
     PaymentDetailPage detailPage = new PaymentDetailPage();
     PaymentMethodPage methodPage = new PaymentMethodPage();
     OTPVerificationPages otpVerification = new OTPVerificationPages();
+    PaymentSuccessPage successPage = new PaymentSuccessPage();
 
 
     @When("User choose telkom payment")
@@ -69,14 +70,18 @@ public class PaymentDef {
 
     @And("User click confirm button")
     public void userClickConfirmButton() {
+        otpVerification.confirmOTP();
     }
 
     @Then("User see payment success pop up")
     public void userSeePaymentSuccessPopUp() {
+       boolean confirm_success = successPage.onPaymentSuccessPage();
+       Assert.assertTrue(confirm_success);
     }
 
     @And("User click close button")
     public void userClickCloseButton() {
+        successPage.closeButton();
     }
 
 }
