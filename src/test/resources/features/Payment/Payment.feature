@@ -2,8 +2,8 @@
 Feature: Payment
   Background:
     Given User is on app login page
-    When User input registered email
-    And User input registered password
+    When User input "81112345" in phone number field
+    And User input "Pass@123" in password text field
     And User click login button
     Then User is on Home Page
 

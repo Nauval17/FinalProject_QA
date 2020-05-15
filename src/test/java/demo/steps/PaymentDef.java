@@ -1,30 +1,35 @@
 package demo.steps;
 
+import demo.pages.HomePage;
+import demo.pages.PaymentInsertNumberPage;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class PaymentDef {
 
-    @When("User input registered email")
-    public void userInputRegisteredEmail() {
-    }
+    HomePage homePage = new HomePage();
+    PaymentInsertNumberPage insertNumberPage = new PaymentInsertNumberPage();
 
-    @And("User input registered password")
-    public void userInputRegisteredPassword() {
-    }
 
     @When("User choose telkom payment")
     public void userChooseTelkomPayment() {
+        homePage.clickTelkomPayment();
+    }
+
+    @And("User is on input phone number page")
+    public void userIsOnInputPhoneNumberPage() {
+        insertNumberPage.isOnPage();
     }
 
     @And("User input telkom phone number")
     public void userInputTelkomPhoneNumber() {
+        insertNumberPage.inputNumber();
     }
 
     @And("User click cek tagihan button")
     public void userClickCekTagihanButton() {
+        insertNumberPage.clickButton();
     }
 
     @And("User see payment detail")
@@ -58,4 +63,5 @@ public class PaymentDef {
     @And("User click close button")
     public void userClickCloseButton() {
     }
+
 }
