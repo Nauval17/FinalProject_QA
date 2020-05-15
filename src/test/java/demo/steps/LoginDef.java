@@ -27,6 +27,10 @@ public class LoginDef {
     public void userInputInPasswordTextField(String loginPassword) { loginPage.inputPassword(loginPassword);
     }
 
+    @When("User click login button")
+    public void userClickSignInButton() { loginPage.clickLoginButton();
+    }
+
     @Then("User is on Home Page")
     public void userIsOnHomePage() {
         boolean actual = homePage.onHomePage();

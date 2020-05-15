@@ -15,10 +15,6 @@ public class PaymentDef {
     public void userInputRegisteredPassword() {
     }
 
-    @And("User click login button")
-    public void userClickSignInButton() {
-    }
-
     @When("User choose telkom payment")
     public void userChooseTelkomPayment() {
     }
