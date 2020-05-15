@@ -6,9 +6,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class PaymentDef {
-    @Given("User is on app login page")
-    public void userIsOnAppLoginPage() {
-    }
 
     @When("User input registered email")
     public void userInputRegisteredEmail() {
