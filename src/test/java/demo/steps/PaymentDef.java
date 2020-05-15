@@ -19,10 +19,6 @@ public class PaymentDef {
     public void userClickSignInButton() {
     }
 
-    @Then("User is on Payment Home")
-    public void userIsOnPaymentHome() {
-    }
-
     @When("User choose telkom payment")
     public void userChooseTelkomPayment() {
     }

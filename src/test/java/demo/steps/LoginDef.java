@@ -1,11 +1,16 @@
 package demo.steps;
 
+import demo.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginDef {
+
+    LoginPage loginPage = new LoginPage();
+
+
     @Given("User is on app login page")
     public void userIsOnAppLoginPage() {
     }

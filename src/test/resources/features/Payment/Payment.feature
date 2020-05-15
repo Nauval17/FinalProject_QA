@@ -5,10 +5,10 @@ Feature: Payment
     When User input registered email
     And User input registered password
     And User click login button
-    Then User is on Payment Home
+    Then User is on Home Page
 
     Scenario:
-      Given User is on Payment Home
+      Given User is on Home Page
       When User choose telkom payment
       And User is on input phone number page
       And User input telkom phone number
