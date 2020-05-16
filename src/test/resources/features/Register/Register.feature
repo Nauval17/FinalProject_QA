@@ -1,7 +1,7 @@
 @Android @Register
   Feature: Register
 
-    # Valid inputs
+    # Valid inputs register
     @Valid
     Scenario Outline: Register new account with valid input
       Given User tapped register button on login page

@@ -71,5 +71,6 @@ public class RegisterDef {
     public void userIsStillOnRegisterPage() {
         boolean stillOnPage = registerPage.isOnPage();
         Assert.assertTrue(stillOnPage);
+
     }
 }
