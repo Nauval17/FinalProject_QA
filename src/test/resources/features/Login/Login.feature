@@ -1,6 +1,6 @@
 @Android @Login
 Feature: Login
-
+  @Valid
   Scenario Outline: Login with valid phone number and password
     Given User is on app login page
     When  User input "<loginPhoneNumber>" in phone number field
@@ -19,12 +19,14 @@ Feature: Login
       | 896987654321     | p4ssWord.132435      |
       | 898918273645     | logiNpassworD123456, |
 
+  @Invalid
   Scenario Outline: Login with invalid phone number and/or password
     Given User is on app login page
     When  User input "<loginPhoneNumber>" in phone number field
     And   User input "<loginPassword>" in password text field
     And   User click login button
     Then  User is not on Home Page
+    And   User see "Wrong Phone/Pass Format" as the error message on login page
     Examples:
   |loginPhoneNumber  |loginPassword                |
   |                  |Pass@123                     |

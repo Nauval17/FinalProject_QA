@@ -39,7 +39,13 @@ public class LoginDef {
 
     @Then("User is not on Home Page")
     public void userIsNotOnHomePage() {
-        boolean actual = homePage.onHomePage();
-        Assert.assertFalse(actual);
+        boolean actual = loginPage.onLoginPage();
+        Assert.assertTrue(actual);
+    }
+
+    @Then("User see {string} as the error message on login page")
+    public void userSeeAsTheErrorMessageOnLoginPage(String errorMessage) {
+        boolean displayErrorMessage = loginPage.getErrorMessage(errorMessage);
+        Assert.assertTrue(displayErrorMessage);
     }
 }
