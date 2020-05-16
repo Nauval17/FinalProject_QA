@@ -1,32 +1,31 @@
 package demo.pages;
 
+import demo.controller.OTPController;
 import demo.driver.AndroidDriverInstance;
 import demo.locators.PaymentVerificationLocator;
 import io.appium.java_client.android.AndroidElement;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OTPVerificationPages implements PaymentVerificationLocator {
 
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
+    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 3);
 
-    public boolean isOnPage(){
-        return wait.until(ExpectedConditions.presenceOfElementLocated(TEXT_TITLE_PAGE)).isDisplayed();
+    public void isOnPage(){
+        wait.until(ExpectedConditions.presenceOfElementLocated(TEXT_TITLE_PAGE));
     }
 
-    public void requestOTP(){
-        Response response = RestAssured
-                .given()
-                .baseUri("http://infinite-waters-35921.herokuapp.com")
-                .basePath("/api/paystore/user/otp")
-                .header("Content-type","application/json")
-                .header("Accept","application/json")
-                .post();
+    public String requestOTP(){
+        WebElement toastView = AndroidDriverInstance.androidDriver.findElement(By.xpath("//android.widget.Toast[1]"));
+        return toastView.getText();
+    }
 
-        AndroidElement inputOTP = AndroidDriverInstance.androidDriver.findElement(INPUT_OTP);
-        inputOTP.sendKeys(response.toString());
+    public void inputOTP(String otp){
+        AndroidElement input = AndroidDriverInstance.androidDriver.findElement(INPUT_OTP);
+        input.sendKeys(otp);
     }
 
     public void confirmOTP(){

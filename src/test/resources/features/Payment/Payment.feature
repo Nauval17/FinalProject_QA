@@ -20,5 +20,5 @@ Feature: Payment
       And User is on OTP page
       And User input OTP
       And User click confirm button
-      Then User see payment success pop up
+      Then User see payment success toast
       And User click close button
