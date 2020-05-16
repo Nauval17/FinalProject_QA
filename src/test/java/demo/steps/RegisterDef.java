@@ -3,7 +3,6 @@ package demo.steps;
 import demo.pages.LoginPage;
 import demo.pages.OTPRegisterPages;
 import demo.pages.RegisterPage;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
