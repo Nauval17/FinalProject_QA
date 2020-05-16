@@ -2,8 +2,8 @@
 Feature: Payment
   Background:
     Given User is on app login page
-    When User input "81112345" in phone number field
-    And User input "Pass@123" in password text field
+    When User input "82112345678" in phone number field
+    And User input "P@ssw0rd!" in password text field
     And User click login button
     Then User is on Home Page
 
@@ -11,7 +11,7 @@ Feature: Payment
       Given User is on Home Page
       When User choose telkom payment
       And User is on input phone number page
-      And User input telkom phone number
+      And User input telkom phone number "0227212345"
       And User click cek tagihan button
       And User see payment detail
       And User choose payment method

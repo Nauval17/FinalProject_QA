@@ -10,8 +10,10 @@ public interface PaymentMethodPopUpLocator {
     // Button
     By BUTTON_BACK = MobileBy.id("btnBackFromMetode");
     // Recycle View
-    By RECYCLE_ITEM_PAYSTORE_WALLET = MobileBy.id("item[0]");
-    By RECYCLE_ITEM_VIRTUAL_ACCOUNT = MobileBy.id("item[1]");
+    By RECYCLE_ITEM_PAYSTORE_WALLET = MobileBy.xpath("//androidx.recyclerview.widget.RecyclerView/child::android.view" +
+            ".ViewGroup[1]");
+    By RECYCLE_ITEM_VIRTUAL_ACCOUNT = MobileBy.xpath("//androidx.recyclerview.widget.RecyclerView/child::android.view" +
+            ".ViewGroup[2]");
 
     // Element inside Recycle View
     By TEXT_TITLE_METHOD = MobileBy.id("tvTitleMethod");

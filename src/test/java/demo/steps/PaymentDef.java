@@ -26,9 +26,9 @@ public class PaymentDef {
         insertNumberPage.isOnPage();
     }
 
-    @And("User input telkom phone number")
-    public void userInputTelkomPhoneNumber() {
-        insertNumberPage.inputNumber();
+    @And("User input telkom phone number {string}")
+    public void userInputTelkomPhoneNumber(String number) {
+        insertNumberPage.inputNumber(number);
     }
 
     @And("User click cek tagihan button")
@@ -50,7 +50,7 @@ public class PaymentDef {
     @And("User choose paystore methode")
     public void userChoosePaystoreMethode() {
         methodPage.choosePayStore();
-        methodPage.backButton();
+//        methodPage.backButton();
     }
 
     @And("User click bayar sekarang button")
@@ -66,6 +66,7 @@ public class PaymentDef {
 
     @And("User input OTP")
     public void userInputOTP() {
+        otpVerification.requestOTP();
     }
 
     @And("User click confirm button")
