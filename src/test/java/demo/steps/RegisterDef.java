@@ -61,8 +61,10 @@ public class RegisterDef {
         Assert.assertTrue(onVerificationPage);
     }
 
-    @Then("User get an error message on register page")
-    public void userGetAnErrorMessageOnRegisterPage() {
+    @Then("User get {string} as the error message on register page")
+    public void userGetAsTheErrorMessageOnRegisterPage(String errorMessage) {
+        boolean displayErrorMessage = registerPage.getErrorMessage(errorMessage);
+        Assert.assertTrue(displayErrorMessage);
     }
 
     @Then("User is not directed to the verification page")

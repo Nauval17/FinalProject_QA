@@ -2,9 +2,13 @@ package demo.pages;
 
 import demo.driver.AndroidDriverInstance;
 import demo.locators.RegisterLocator;
+import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class RegisterPage implements RegisterLocator {
 
@@ -46,11 +50,15 @@ public class RegisterPage implements RegisterLocator {
         clickOn(BUTTON_REGISTER);
     }
 
-//    public boolean getErrorMessage() {
-//        WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 30);
-//        WebElement errorMessage = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
-//        return errorMessage.isDisplayed();
-//    }
+    public boolean getErrorMessage(String toastMessage) {
+        WebElement toast = wait.until(ExpectedConditions
+                .presenceOfElementLocated(By.xpath("//android.widget.Toast[1]")));
+        boolean found = false;
+        if (toast.getText().equals(toastMessage)) {
+            found = true;
+        }
+        return found;
+    }
 
 
 }
