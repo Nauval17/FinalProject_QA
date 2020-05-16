@@ -26,6 +26,7 @@ Feature: Login
     And   User input "<loginPassword>" in password text field
     And   User click login button
     Then  User is not on Home Page
+    And   User see "Wrong Phone/Pass Format" as the error message on login page
     Examples:
   |loginPhoneNumber  |loginPassword                |
   |                  |Pass@123                     |
