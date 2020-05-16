@@ -42,4 +42,10 @@ public class LoginDef {
         boolean actual = homePage.onHomePage();
         Assert.assertFalse(actual);
     }
+
+/*    @Then("User is not on Home Page")
+    public void userIsNotOnHomePage() {
+        boolean actual = loginPage.onLoginPage();
+        Assert.assertTrue(actual);
+    }*/
 }

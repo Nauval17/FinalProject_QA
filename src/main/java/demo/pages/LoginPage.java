@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage implements LoginLocator, HomeLocator {
 
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
+    //WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 5);
 
     public boolean onLoginPage() {
         return AndroidDriverInstance.androidDriver.findElement(TEXT_TITLE)

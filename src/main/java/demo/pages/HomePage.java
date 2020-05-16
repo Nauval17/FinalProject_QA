@@ -10,8 +10,13 @@ public class HomePage implements HomeLocator {
 
     WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
 
-    public boolean onHomePage(){
+/*    public boolean onHomePage(){
         return AndroidDriverInstance.androidDriver.findElement(TEXT_WELCOME)
+                .isDisplayed();
+    }*/
+
+    public boolean onHomePage(){
+        return wait.until(ExpectedConditions.presenceOfElementLocated(TEXT_WELCOME))
                 .isDisplayed();
     }
 
