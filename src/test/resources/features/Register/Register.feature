@@ -41,7 +41,7 @@
       And User input "<password>" as the password on register page
       And User input "<confirm_password>" as the repeat of password on register page
       And User tap Register button on register page
-      Then User get "Please enter valid information" as the error message on register page
+      Then User get "Please Enter Valid Information" as the error message on register page
       And User is still on register page
       Examples:
         | name                  | email                          | phone_number  | password              | confirm_password      |
