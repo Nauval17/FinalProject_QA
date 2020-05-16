@@ -3,6 +3,7 @@ package demo.steps;
 import demo.pages.LoginPage;
 import demo.pages.OTPRegisterPages;
 import demo.pages.RegisterPage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -67,10 +68,9 @@ public class RegisterDef {
         Assert.assertTrue(displayErrorMessage);
     }
 
-    @Then("User is not directed to the verification page")
-    public void userIsNotDirectedToTheVerificationPage() {
-        boolean onVerificationPage = otpRegisterPages.isOnPage();
-        Assert.assertFalse(onVerificationPage);
+    @Then("User is still on register page")
+    public void userIsStillOnRegisterPage() {
+        boolean stillOnPage = registerPage.isOnPage();
+        Assert.assertTrue(stillOnPage);
     }
-
 }

@@ -24,7 +24,6 @@
         | Zaki Akhmad Faridzan | zaki.akhmadf@gmail.com        | 81223176618  | Zaki123@             | Zaki123@             |
         | Zaki Akhmad Faridzan | zaki_akhmadf@gmail.com        | 81223176619  | Zaki123@             | Zaki123@             |
         | Zaki Akhmad Faridzan | zaki-akhmadf@gmail.com        | 81223176620  | Zaki123@             | Zaki123@             |
-#        | Zaki Akhmad Faridzan | "zakiakhmadf20!@#"@gmail.com  | 81223176621  | Zaki123@             | Zaki123@             |
         | Zaki Akhmad Faridzan | zakiakhmadfaridzan1@gmail.com | 812234565    | Zaki123@             | Zaki123@             |
         | Zaki Akhmad Faridzan | zakiakhmadfaridzan2@gmail.com | 812234565888 | Zaki123@             | Zaki123@             |
         | Zaki Akhmad Faridzan | zakiakhmadfaridzan3@gmail.com | 81223176622  | Zakiakhmad123!@      | Zakiakhmad123!@      |
@@ -40,8 +39,8 @@
       And User input "<password>" as the password on register page
       And User input "<confirm_password>" as the repeat of password on register page
       And User tap Register button on register page
-      Then User get "" as the error message on register page
-      And User is not directed to the verification page
+      Then User get "Please enter valid information" as the error message on register page
+      And User is still on register page
       Examples:
         | name                  | email                          | phone_number  | password              | confirm_password      |
         |                       | zakiakhmadfaridzan5@gmail.com  | 81223176624   | Zaki123@              | Zaki123@              |
@@ -63,14 +62,13 @@
         | Zaki Akhmad Faridzan  | zakiakhmad@gmail..com          | 81223176640   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmad@gmail.c             | 81223176641   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmad                     | 81223176642   | Zaki123@              | Zaki123@              |
+        | Zaki Akhmad Faridzan  | "zakiakhmadf20!@#"@gmail.com   | 81223176621   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan12@gmail.com |               | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan13@gmail.com | 81223176      | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan14@gmail.com | 8122317661700 | Zaki123@              | Zaki123@              |
-#        | Zaki Akhmad Faridzan | zakiakhmadfaridzan15@gmail.com | nomortelepon  | Zaki123@ | Zaki123@ |
-#        | Zaki Akhmad Faridzan | zakiakhmadfaridzan16@gmail.com | A812231766B   | Zaki123@ | Zaki123@ |
-        | Zaki Akhmad Faridzan | zakiakhmadfaridzan17@gmail.com | ._,--,_._-    | Zaki123@ | Zaki123@ |
-        | Zaki Akhmad Faridzan | zakiakhmadfaridzan18@gmail.com | 812231766-.   | Zaki123@ | Zaki123@ |
-        | Zaki Akhmad Faridzan | zakiakhmadfaridzan19@gmail.com | -81223176642  | Zaki123@ | Zaki123@ |
+        | Zaki Akhmad Faridzan  | zakiakhmadfaridzan17@gmail.com | ._,--,_._-    | Zaki123@              | Zaki123@              |
+        | Zaki Akhmad Faridzan  | zakiakhmadfaridzan18@gmail.com | 812231766-.   | Zaki123@              | Zaki123@              |
+        | Zaki Akhmad Faridzan  | zakiakhmadfaridzan19@gmail.com | -81223176642  | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan20@gmail.com | 81223176610   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan21@gmail.com | 81223176643   |                       | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan22@gmail.com | 81223176644   | Zaki12@               | Zaki12@               |
