@@ -24,6 +24,7 @@ public class OTPVerificationPages implements PaymentVerificationLocator {
     public void inputOTP(String otp){
         AndroidElement input = AndroidDriverInstance.androidDriver.findElement(INPUT_OTP);
         input.sendKeys(otp);
+        AndroidDriverInstance.androidDriver.hideKeyboard();
     }
 
     public void confirmOTP(){

@@ -13,7 +13,8 @@ public class PaymentDef {
     PaymentDetailPage detailPage = new PaymentDetailPage();
     PaymentMethodPage methodPage = new PaymentMethodPage();
     OTPVerificationPages otpVerification = new OTPVerificationPages();
-//    PaymentSuccessPage successPage = new PaymentSuccessPage();
+    PaymentSuccessPage successPage = new PaymentSuccessPage();
+    PhoneNotFoundPage notFoundPage = new PhoneNotFoundPage();
 
     @When("User choose telkom payment")
     public void userChooseTelkomPayment() {
@@ -73,17 +74,33 @@ public class PaymentDef {
         otpVerification.confirmOTP();
     }
 
-    @Then("User see payment success page")
+    @Then("User see payment success pop up")
     public void userSeePaymentSuccessToast() {
-
-
+       boolean confirm_success = successPage.successPage();
+       Assert.assertTrue(confirm_success);
     }
 
     @Then("User see error pop up")
     public void userSeeErrorPopUp() {
+        notFoundPage.notFoundPopUp();
     }
 
-    @And("User click close button")
+    @And("User close payment success pop up")
     public void userClickCloseButton() {
+        successPage.closePopUp();
+    }
+
+    @And("User wait for thirty seconds")
+    public void userWaitForThirtySeconds() {
+        try {
+            otpVerification.resendOTP();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @And("User choose virtual account method")
+    public void userChooseVirtualAccountMethod() {
+        methodPage.chooseVirtualAccount();
     }
 }

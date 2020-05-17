@@ -23,7 +23,7 @@ public class AndroidDriverInstance {
         caps.setCapability("autoGrantPermissions", true);
         caps.setCapability("newCommandTimeout", 120);
         caps.setCapability("app",
-                System.getProperty("user.dir") + File.separator + "APP" + File.separator + "paystore scroll+photo.apk");
+                System.getProperty("user.dir") + File.separator + "APP" + File.separator + "paystore v1.4.apk");
         caps.setCapability("automationName", "UiAutomator2");
         try {
             androidDriver = new AndroidDriver<>(new URL(appiumUrl), caps);
