@@ -1,21 +1,15 @@
 package demo.pages;
-
-import demo.driver.AndroidDriverInstance;
-import demo.locators.PaymentSuccessLocator;
-import io.appium.java_client.android.AndroidElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-public class PaymentSuccessPage implements PaymentSuccessLocator {
-
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
-
-    public boolean onPaymentSuccessPage(){
-        return wait.until(ExpectedConditions.presenceOfElementLocated(TEXT_TITLE)).isDisplayed();
-    }
-
-    public void closeButton(){
-        AndroidElement close = AndroidDriverInstance.androidDriver.findElement(BUTTON_CLOSE);
-        close.click();
-    }
+//
+//import demo.driver.AndroidDriverInstance;
+//import org.openqa.selenium.By;
+//import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.support.ui.WebDriverWait;
+//
+public class PaymentSuccessPage {
+//
+//    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
+//
+//    public boolean successToast(String toastSuccess){
+//        WebElement toast = AndroidDriverInstance.androidDriver.findElement(By.xpath("//android.widget.Toast[1]"));
+//    }
 }

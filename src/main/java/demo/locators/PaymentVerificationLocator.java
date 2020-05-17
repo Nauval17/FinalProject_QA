@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 public interface PaymentVerificationLocator {
 
     // Text View
-    By TEXT_TITLE_PAGE = MobileBy.id("tvVerificationNumberPayment");
+    By TEXT_TITLE_PAGE = MobileBy.id("tvPayVerificationNumber");
 
     // Edit Text
-    By INPUT_OTP = MobileBy.id("etOTPNumberPayment");
+    By INPUT_OTP = MobileBy.id("etPayOTPNumber");
 
     // Button
-    By BUTTON_CONFIRM = MobileBy.id("btnConfirmOTPPayment");
+    By BUTTON_CONFIRM = MobileBy.id("btnPayConfirmOTP");
 }

@@ -1,10 +1,8 @@
 package demo.pages;
 
-import demo.controller.OTPController;
 import demo.driver.AndroidDriverInstance;
 import demo.locators.PaymentVerificationLocator;
 import io.appium.java_client.android.AndroidElement;
-import io.restassured.response.Response;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
