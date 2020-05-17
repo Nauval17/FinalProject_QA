@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 public interface PaymentSuccessLocator {
 
     // Text View
-    By TEXT_TITLE = MobileBy.id("tvPaymentSucces");
+    By TEXT_TITLE = MobileBy.id("tvPaymentSuccess");
 
     // Button
-    By BUTTON_CLOSE = MobileBy.id("btnCloseSucces");
-    By BUTTON_ICON_CLOSE = MobileBy.id("btnIconCloseSucces");
+    By BUTTON_CLOSE = MobileBy.id("btnCloseSuccess");
+    By BUTTON_ICON_CLOSE = MobileBy.id("btnIconCloseSuccess");
 }

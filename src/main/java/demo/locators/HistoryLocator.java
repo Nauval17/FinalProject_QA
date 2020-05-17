@@ -10,6 +10,7 @@ public interface HistoryLocator {
 
     // Button
     By BUTTON_BACK = MobileBy.id("ibBackFromHistory");
+    By BUTTON_PAYMENT = MobileBy.id("btnBayarTagihanHistory");
 
     // Recycle View
     By RECYCLE_ITEM_1 = MobileBy.id("item[0]");
