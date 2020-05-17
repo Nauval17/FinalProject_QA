@@ -1,6 +1,6 @@
 package demo.steps;
 
-import demo.controller.OTPController;
+//import demo.controller.OTPController;
 import demo.pages.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -10,7 +10,7 @@ import org.junit.Assert;
 
 public class PaymentDef {
 
-    OTPController controller = new OTPController();
+    //OTPController controller = new OTPController();
     HomePage homePage = new HomePage();
     PaymentInsertNumberPage insertNumberPage = new PaymentInsertNumberPage();
     PaymentDetailPage detailPage = new PaymentDetailPage();
