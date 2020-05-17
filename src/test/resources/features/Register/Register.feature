@@ -53,7 +53,7 @@
         | Zaki!@                | zakiakhmadfaridzan10@gmail.com | 81223176629   | Zaki123@              | Zaki123@              |
         | Zaki🙃                | zakiakhmadfaridzan11@gmail.com | 81223176630   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  |                                | 81223176631   | Zaki123@              | Zaki123@              |
-        | Zaki Akhmad Faridzan  | zakifaridzan@gmail.com         | 81223176632   | Zaki123@              | Zaki123@              |
+        | Zaki Akhmad Faridzan  | zakifaridzan.@gmail.com         | 81223176632   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zaki akhmad@gmail.com          | 81223176633   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | .zakiakhmad@gmail.com          | 81223176634   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadgmail.com            | 81223176635   | Zaki123@              | Zaki123@              |
@@ -71,7 +71,7 @@
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan17@gmail.com | ._,--,_._-    | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan18@gmail.com | 812231766-.   | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan19@gmail.com | -81223176642  | Zaki123@              | Zaki123@              |
-        | Zaki Akhmad Faridzan  | zakiakhmadfaridzan20@gmail.com | 81223176610   | Zaki123@              | Zaki123@              |
+        | Zaki Akhmad Faridzan  | zakiakhmadfaridzan20@gmail.com | 812-2317-661  | Zaki123@              | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan21@gmail.com | 81223176643   |                       | Zaki123@              |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan22@gmail.com | 81223176644   | Zaki12@               | Zaki12@               |
         | Zaki Akhmad Faridzan  | zakiakhmadfaridzan23@gmail.com | 81223176645   | Zakiakhmad123456789!@ | Zakiakhmad123456789!@ |
