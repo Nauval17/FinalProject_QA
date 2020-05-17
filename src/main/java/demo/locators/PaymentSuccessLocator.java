@@ -9,6 +9,6 @@ public interface PaymentSuccessLocator {
     By TEXT_TITLE = MobileBy.id("tvPaymentSucces");
 
     // Button
-    By BUTTON_CLOSE = MobileBy.id("btnCloseSucces");
-    By BUTTON_ICON_CLOSE = MobileBy.id("btnIconCloseSucces");
+    By BUTTON_CLOSE = MobileBy.id("btnCloseSuccess");
+    By BUTTON_ICON_CLOSE = MobileBy.id("btnIconCloseSuccess");
 }

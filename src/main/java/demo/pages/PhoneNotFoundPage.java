@@ -1,18 +1,16 @@
 package demo.pages;
 
 import demo.driver.AndroidDriverInstance;
-import demo.locators.PaymentSuccessLocator;
+import demo.locators.NumberNotFoundLocator;
 import io.appium.java_client.android.AndroidElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PaymentSuccessPage implements PaymentSuccessLocator {
+public class PhoneNotFoundPage implements NumberNotFoundLocator {
 
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
+    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 20);
 
-    public boolean successPage(){
+    public boolean notFoundPopUp(){
         return wait.until(ExpectedConditions.presenceOfElementLocated(TEXT_TITLE)).isDisplayed();
     }
 

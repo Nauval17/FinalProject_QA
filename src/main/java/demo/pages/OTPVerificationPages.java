@@ -31,8 +31,9 @@ public class OTPVerificationPages implements PaymentVerificationLocator {
         confirm.click();
     }
 
-//    public void resendOTP(){
-//        AndroidElement resend = AndroidDriverInstance.androidDriver.findElement(BUTTON_RESEND_OTP);
-//        resend.click();
-//    }
+    public void resendOTP() throws InterruptedException {
+        Thread.sleep(30000);
+        AndroidElement resend = AndroidDriverInstance.androidDriver.findElement(BUTTON_RESEND_OTP);
+        resend.click();
+    }
 }

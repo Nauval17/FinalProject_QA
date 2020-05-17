@@ -13,4 +13,5 @@ public interface PaymentVerificationLocator {
 
     // Button
     By BUTTON_CONFIRM = MobileBy.id("btnPayConfirmOTP");
+    By BUTTON_RESEND_OTP = MobileBy.id("btnResendPayOtp");
 }

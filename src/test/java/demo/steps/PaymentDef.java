@@ -1,22 +1,19 @@
 package demo.steps;
 
-import demo.controller.OTPController;
 import demo.pages.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.response.Response;
 import org.junit.Assert;
 
 public class PaymentDef {
 
-    OTPController controller = new OTPController();
     HomePage homePage = new HomePage();
     PaymentInsertNumberPage insertNumberPage = new PaymentInsertNumberPage();
     PaymentDetailPage detailPage = new PaymentDetailPage();
     PaymentMethodPage methodPage = new PaymentMethodPage();
     OTPVerificationPages otpVerification = new OTPVerificationPages();
-    PaymentSuccessPage successPage = new PaymentSuccessPage();
+//    PaymentSuccessPage successPage = new PaymentSuccessPage();
 
     @When("User choose telkom payment")
     public void userChooseTelkomPayment() {
@@ -49,10 +46,9 @@ public class PaymentDef {
         detailPage.choosePaymentMethod();
     }
 
-    @And("User choose paystore methode")
-    public void userChoosePaystoreMethode() {
+    @And("User choose paystore method")
+    public void userChoosePaystoreMethod() {
         methodPage.choosePayStore();
-//        methodPage.backButton();
     }
 
     @And("User click bayar sekarang button")
@@ -77,9 +73,17 @@ public class PaymentDef {
         otpVerification.confirmOTP();
     }
 
-    @Then("User see payment success toast")
+    @Then("User see payment success page")
     public void userSeePaymentSuccessToast() {
+
 
     }
 
+    @Then("User see error pop up")
+    public void userSeeErrorPopUp() {
+    }
+
+    @And("User click close button")
+    public void userClickCloseButton() {
+    }
 }
