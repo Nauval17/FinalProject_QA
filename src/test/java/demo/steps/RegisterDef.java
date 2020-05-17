@@ -68,7 +68,8 @@ public class RegisterDef {
     }
 
     @Then("User is still on register page")
-    public void userIsStillOnRegisterPage() {
+    public void userIsStillOnRegisterPage() throws InterruptedException {
+        Thread.sleep(5000);
         boolean stillOnPage = registerPage.isOnPage();
         Assert.assertTrue(stillOnPage);
 
