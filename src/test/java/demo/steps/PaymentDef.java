@@ -83,7 +83,7 @@ public class PaymentDef {
        Assert.assertTrue(confirm_success);
     }
 
-    @Then("User see error pop up")
+    @And("User see error pop up")
     public void userSeeErrorPopUp() {
        boolean error_popup = notFoundPage.notFoundPopUp();
        Assert.assertTrue(error_popup);
@@ -174,5 +174,10 @@ public class PaymentDef {
     @And("User click back button on history")
     public void userClickBackButtonOnHistory() {
         historyPage.backButton();
+    }
+
+    @And("User close error pop up")
+    public void userCloseErrorPopUp() {
+        notFoundPage.closePopUp();
     }
 }

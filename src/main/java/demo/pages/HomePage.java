@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage implements HomeLocator {
 
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 20);
+    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 30);
 
 /*    public boolean onHomePage(){
         return AndroidDriverInstance.androidDriver.findElement(TEXT_WELCOME)

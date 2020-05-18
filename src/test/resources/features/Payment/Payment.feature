@@ -101,7 +101,8 @@ Feature: Payment
       And User is on input phone number page
       And User input telkom phone number "022123456"
       And User click cek tagihan button
-      Then User see error pop up
+      And User see error pop up
+      And User close error pop up
       And User is on input phone number page
       And User click back button on phone number page
       And User is on Home Page
