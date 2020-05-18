@@ -1,7 +1,6 @@
 @Android @Register
   Feature: Register
 
-    # Valid inputs register
     @Valid
     Scenario Outline: Register new account with valid input
       Given User tapped register button on login page
@@ -30,7 +29,6 @@
         | Zaki Akhmad Faridzan | zakiakhmadfaridzan3@gmail.com | 81223176622  | Zakiakhmad123!@      | Zakiakhmad123!@      |
         | Zaki Akhmad Faridzan | zakiakhmadfaridzan4@gmail.com | 81223176623  | Zakiakhmadf1234567!@ | Zakiakhmadf1234567!@ |
 
-    # Invalid inputs
     @Invalid
     Scenario Outline: Register new account with invalid input
       Given User tapped register button on login page
