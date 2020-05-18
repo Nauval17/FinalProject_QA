@@ -12,7 +12,7 @@ Feature: Payment
       Given User is on Home Page
       When User choose telkom payment
       And User is on input phone number page
-      And User input telkom phone number "0361123456789"
+      And User input telkom phone number "022729157534"
       And User click cek tagihan button
       And User see payment detail
       And User choose payment method
@@ -21,25 +21,54 @@ Feature: Payment
       And User is on OTP page
       And User input OTP
       And User click confirm button
-      Then User see payment success pop up
-      And User close payment success pop up
+      And User is on input phone number page
+      And User click back button on phone number page
+      And User is on Home Page
+      And User click profile menu
+      And User is on profile page
+      Then User log out
+      And User is on app login page
+#      Then User see payment success pop up
+#      And User close payment success pop up
 
   @Payment_2
   Scenario: User pay telephone bill using virtual account
     Given User is on Home Page
     When User choose telkom payment
     And User is on input phone number page
-    And User input telkom phone number "03611234"
+    And User input telkom phone number "0361123456789"
     And User click cek tagihan button
     And User see payment detail
     And User choose payment method
     And User choose virtual account method
-    And User click bayar sekarang button
+    Then User click bayar sekarang button
 #    And User is on OTP page
 #    And User input OTP
 #    And User click confirm button
-    Then User see payment success pop up
+    And User see payment success pop up
     And User close payment success pop up
+    And User is on input phone number page
+    And User click back button on phone number page
+    And User is on Home Page
+    And User Click History Menu
+    And User is on History
+    And User click first history
+    And User is on first history detail
+    And User click upload photo
+    And User take photo
+    And User is on first history detail
+    And User click bayar button
+    And User see payment success pop up
+    And User close payment success pop up
+    And User click back button on history detail
+    And User is on History
+    And User click back button on history
+    And User is on Home Page
+    And User click profile menu
+    And User is on profile page
+    Then User log out
+    And User is on app login page
+
 
   @Payment_3
     Scenario: User resend otp
@@ -55,9 +84,16 @@ Feature: Payment
       And User is on OTP page
       And User wait for thirty seconds
       And User input OTP
-      And User click confirm button
-      Then User see payment success pop up
-      And User close payment success pop up
+      Then User click confirm button
+      And User is on input phone number page
+      And User click back button on phone number page
+      And User is on Home Page
+      And User click profile menu
+      And User is on profile page
+      Then User log out
+      And User is on app login page
+#      Then User see payment success pop up
+#      And User close payment success pop up
 
   @Payment_4
     Scenario: User input unregistered telkom phone number

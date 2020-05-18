@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PaymentInsertNumberPage implements InsertPhoneNumberLocator {
 
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
+    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 20);
 
     public boolean isOnPage(){
         return wait.until(ExpectedConditions.presenceOfElementLocated(TEXT_TITLE)).isDisplayed();
@@ -22,6 +22,11 @@ public class PaymentInsertNumberPage implements InsertPhoneNumberLocator {
     public void clickButton(){
         AndroidElement buttonClick = AndroidDriverInstance.androidDriver.findElement(BUTTON_CHECK_BILL);
         buttonClick.click();
+    }
+
+    public void backButton(){
+        AndroidElement buttonBack = AndroidDriverInstance.androidDriver.findElement(BUTTON_BACK);
+        buttonBack.click();
     }
 
 }

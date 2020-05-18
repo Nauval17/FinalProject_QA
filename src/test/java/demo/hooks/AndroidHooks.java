@@ -9,12 +9,12 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class AndroidHooks {
 
-    @Before(value = "@Android and @Payment")
+    @Before(value = "@Android and @Payment and @Payment_1 or @Android and @Payment and @Payment_2")
     public void initializeWebDriver() {
         AndroidDriverInstance.initialize();
     }
 
-    @After(value = "@Android and @Payment")
+    @After(value = "@Android and @Payment and @Payment_1 or @Android and @Payment and @Payment_2")
     public void quitWebDriver(Scenario scenario) {
         if (scenario.isFailed()) {
             scenario

@@ -2,13 +2,14 @@ package demo.pages;
 
 import demo.driver.AndroidDriverInstance;
 import demo.locators.HomeLocator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage implements HomeLocator {
 
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 10);
+    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 20);
 
 /*    public boolean onHomePage(){
         return AndroidDriverInstance.androidDriver.findElement(TEXT_WELCOME)
@@ -24,4 +25,14 @@ public class HomePage implements HomeLocator {
         WebElement clickLogo = wait.until(ExpectedConditions.presenceOfElementLocated(BUTTON_TELKOM));
         clickLogo.click();
     }
+
+    public void clickProfileMenu(){
+        WebElement clickProfile= wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ivUserWallet")));
+        clickProfile.click();
+    }
+    public void clickHistory(){
+        WebElement clickHistory = wait.until(ExpectedConditions.presenceOfElementLocated(BUTTON_HISTORY));
+        clickHistory.click();
+    }
+
 }
