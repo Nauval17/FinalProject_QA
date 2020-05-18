@@ -47,8 +47,8 @@ Feature: Payment
 #    And User click confirm button
     And User see payment success pop up
     And User close payment success pop up
-    And User is on input phone number page
-    And User click back button on phone number page
+#    And User is on input phone number page
+#    And User click back button on phone number page
     And User is on Home Page
     And User Click History Menu
     And User is on History
@@ -68,7 +68,6 @@ Feature: Payment
     And User is on profile page
     Then User log out
     And User is on app login page
-
 
   @Payment_3
     Scenario: User resend otp
@@ -103,4 +102,11 @@ Feature: Payment
       And User input telkom phone number "022123456"
       And User click cek tagihan button
       Then User see error pop up
+      And User is on input phone number page
+      And User click back button on phone number page
+      And User is on Home Page
+    And User click profile menu
+    And User is on profile page
+    Then User log out
+    And User is on app login page
 

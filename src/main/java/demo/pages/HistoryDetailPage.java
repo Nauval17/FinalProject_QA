@@ -2,7 +2,6 @@ package demo.pages;
 
 import demo.driver.AndroidDriverInstance;
 import demo.locators.HistoryDetailLocator;
-import demo.locators.HistoryLocator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

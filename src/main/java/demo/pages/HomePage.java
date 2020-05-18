@@ -30,6 +30,7 @@ public class HomePage implements HomeLocator {
         WebElement clickProfile= wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ivUserWallet")));
         clickProfile.click();
     }
+
     public void clickHistory(){
         WebElement clickHistory = wait.until(ExpectedConditions.presenceOfElementLocated(BUTTON_HISTORY));
         clickHistory.click();
