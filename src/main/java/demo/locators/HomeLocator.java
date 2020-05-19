@@ -19,6 +19,7 @@ public interface HomeLocator {
 //    By BUTTON_PBB = MobileBy.id("btnPBBOption");
 //    By BUTTON_EMONEY = MobileBy.id("btnEMoneyOption");
     By BUTTON_HISTORY = MobileBy.id("btnHistory");
+    By BUTTON_PROFILE = MobileBy.id("ivUserWallet");
 
     // Image
     By IMAGE_CIRCLE_TOP = MobileBy.id("ivCircleTop");

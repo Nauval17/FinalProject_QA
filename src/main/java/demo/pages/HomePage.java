@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage implements HomeLocator {
 
-    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 30);
+    WebDriverWait wait = new WebDriverWait(AndroidDriverInstance.androidDriver, 20);
 
 /*    public boolean onHomePage(){
         return AndroidDriverInstance.androidDriver.findElement(TEXT_WELCOME)
@@ -27,7 +27,12 @@ public class HomePage implements HomeLocator {
     }
 
     public void clickProfileMenu(){
-        WebElement clickProfile= wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ivUserWallet")));
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement clickProfile= AndroidDriverInstance.androidDriver.findElement(BUTTON_PROFILE);
         clickProfile.click();
     }
 
