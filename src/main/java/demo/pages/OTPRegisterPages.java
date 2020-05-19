@@ -14,12 +14,4 @@ public class OTPRegisterPages implements RegisterVerificationLocator {
                 .isDisplayed();
     }
 
-//    public void confirmOTP(){
-//        AndroidDriverInstance.androidDriver.findElement(BUTTON_CONFIRM_OTP).click();
-//    }
-//
-//    public void resendOTP(){
-//        AndroidDriverInstance.androidDriver.findElement(BUTTON_RESEND_OTP).click();
-//    }
-
 }
